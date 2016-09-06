@@ -1,0 +1,16 @@
+{
+  "name": "micro-amazon",
+  "version": "1.0.0",
+  "description": "Amazon Books API microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro -p 3000"
+  },
+  "keywords": [],
+  "author": "VinayPuppal <@vinaypuppal>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.14.0",
+    "micro": "^6.0.2"
+  }
+}
