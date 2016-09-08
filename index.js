@@ -188,6 +188,7 @@ module.exports = async function (req, res) {
 	console.log('pathname', pathname);
   const match = hash.get(`${method.toUpperCase()} ${pathname}`)
   console.log('match', match);
+  res.setHeader('Access-Control-Allow-Origin','*');
   if (match.handler) {
     try {
       await match.handler(req, res, match.params);
