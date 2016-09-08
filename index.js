@@ -20,18 +20,18 @@ hash.set('GET /books', async function autocompleteBooks(req, res, params) {
 				'required_query_fields': ["q", "locale"],
 				'optional_query_fields': ["page"],
 				'example_request': '/books/search?q=html&locale=in',
-				info: '"q" is search term to be searched, "locale" is country code like IN or US,"page" is page number ranging from 1 to 10 only',
+				info: 'q is search term to be searched, locale is country code like IN or US,page is page number ranging from 1 to 10 only',
 			},
 			price: {
 				endpoint: '/books/price',
 				'required_query_fields': ["q", "locale"],
-				info: '"q" is ASIN of book to get price',
+				info: 'q is ASIN of book to get price',
 				'example_request': '/books/search?q=0070701946&locale=in'
 			},
 			autocomplete: {
 				endpoint: '/books/autocomplete',
 				'required_query_fields': ["q"],
-				info: '"q" is search character to get suggestions',
+				info: 'q is search character to get suggestions',
 				'example_request': '/books/autocomplete?q=h'
 			}
 		}
